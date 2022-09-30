@@ -1,7 +1,6 @@
 name: clojure fmt
 on:
-  pull_request:
-    branches: [main]
+  push
 jobs:
   clojure-fmt:
     runs-on: ubuntu-latest
