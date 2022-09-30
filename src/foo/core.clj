@@ -9,3 +9,7 @@
 (defn kondo-issues [x y z]
   (if x
     true))
+
+(defn add-another-bad-fn  [b a]
+  (inc 1)
+  (not (empty? b)))
