@@ -8,8 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: bltavares/actions/cljfmt@master
+      - uses: bltavares/actions/cljfmt@1.0.8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          args: lint src
+          args: src
