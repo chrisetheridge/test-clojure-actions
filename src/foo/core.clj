@@ -14,5 +14,5 @@
   (inc 1)
   (not (empty? b)))
 
-(defn another-bad-fn [xb]
+(defn another-bad-fn-x1 [xb]
   (assoc-in xb [:b] 2))
