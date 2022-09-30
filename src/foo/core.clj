@@ -13,3 +13,6 @@
 (defn add-another-bad-fn  [b a]
   (inc 1)
   (not (empty? b)))
+
+(defn another-bad-fn [xb]
+  (assoc-in xb [:b] 2))

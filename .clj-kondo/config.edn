@@ -1,0 +1,4 @@
+{:linters {:unsorted-required-namespaces {:level :warning}
+           :keyword-binding              {:level :warning}
+           :redundant-call               {:level :off}
+           :single-key-in                {:level :off}}}
