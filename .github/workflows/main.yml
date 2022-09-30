@@ -1,6 +1,8 @@
 name: clj-kondo checks
 
-on: [push]
+on:
+  pull_request:
+    types: [opened, edited]
 
 jobs:
   self-lint:
