@@ -1,7 +1,7 @@
 name: clojure fmt
 on:
   pull_request:
-    types: [opened, edited]
+    branches: [main]
 jobs:
   clojure-fmt:
     runs-on: ubuntu-latest
