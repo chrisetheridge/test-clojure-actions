@@ -1,7 +1,7 @@
 name: Clojure linting
 
 on:
-    push
+    [push, pull_request]
 jobs:
   clojure-fmt:
     runs-on: ubuntu-latest
