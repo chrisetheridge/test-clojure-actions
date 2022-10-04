@@ -1,17 +1,26 @@
-name: clj-kondo checks
+name: Clojure linting
 
 on:
-  pull_request:
-    branches: [main]
-
+    push
 jobs:
-  self-lint:
+  clojure-fmt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bltavares/actions/cljfmt@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: lint src
+
+  clj-kondo:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: DeLaGuardo/clojure-lint-action@master
-      with:
-        clj-kondo-args: --lint src
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: DeLaGuardo/clojure-lint-action@master
+        with:
+          clj-kondo-args: --lint src
+          github_token: ${{ secrets.GITHUB_TOKEN }}
