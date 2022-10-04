@@ -8,9 +8,9 @@
 
 (defn foo-bar [x]
   (do
-    (inc 1)
-    (inc 3)
-    (map inc [1
+ (inc 1)
+ (inc 3)
+ (map inc [1
 
               2
 
@@ -18,11 +18,11 @@
 
 (defn kondo-issues [x y z]
   (if  x
-    true))
+ true))
 
 (defn add-another-bad-fn  [b a]
   (inc 1)
-  (not (empty? b)))
+(not (empty? b)))
 
 (defn another-bad-fn-x1 [xb]
   (assoc-in xb [:b] 2))
