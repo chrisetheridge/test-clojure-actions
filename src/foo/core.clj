@@ -8,20 +8,16 @@
 
 (defn foo-bar [x]
   (do
- (inc 1)
- (inc 3)
-(map inc [1
-	
-
+    (inc 1)
+    (inc 3)
+    (map inc [1
 
               2
-
-
 
               3])))
 
 (defn kondo-issues [x y z]
-  (if x
+  (if  x
     true))
 
 (defn add-another-bad-fn  [b a]
